@@ -1,4 +1,15 @@
 .footer {
-    background-color: rgb(22, 90, 158);
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-bg-secondary-color);
+    position: relative;
+    padding: 0;
+  
 }
+
+.footer__img img {
+    width: 100px;
+    height: 60px;
+}
+
