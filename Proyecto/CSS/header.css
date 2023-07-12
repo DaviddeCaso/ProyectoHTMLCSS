@@ -1,0 +1,24 @@
+.header {
+    position: sticky;
+    background-color: var(--main-bg-color);
+    z-index: 1000;
+    display: flex;
+    top: 0;
+}
+
+.header-img img {
+    padding: 10px;
+    max-width: 200px;
+}
+
+.header__nav {
+
+}
+
+.header__nav__list {
+
+}
+
+.header__nav__list__item {
+
+}
