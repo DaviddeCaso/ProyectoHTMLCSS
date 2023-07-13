@@ -7,30 +7,40 @@
         <form action=""></form>
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/common.css">
+    <link rel="stylesheet" href="CSS/sign-in.css">
 </head>
-<body class="main-bg">
-    <div>
+<body class="sign-in-bg">
+    <div class="card">
         <h1>Sign in</h1>
-        <form method="post" action="registro.html">
-            <div>
-                <label for="Name">Nombre</label>
+        <form class="form" method="post" action="registro.html">
+            <div class="form__element">
+                <label 
+                class="form__label" 
+                for="Name">Nombre</label>
                 <input 
+                class="form__input"
                 id="Name" 
                 type="text" 
                 placeholder="Escribe tu nombre"
                 name="Name" required>
             </div>
-            <div>
-                <label for="Last-name">Apellidos</label>
+            <div class="form__element">
+                <label 
+                class="form__label" 
+                for="Last-name">Apellidos</label>
                 <input 
+                class="form__input"
                 id="Last-name" 
                 type="text" 
                 placeholder="Escribe tus apellidos"
                 name="Last-name" required>
             </div>
-            <div>
-                <label for="Phone">Teléfono</label>
+            <div class="form__element">
+                <label 
+                class="form__label" 
+                for="Phone">Teléfono</label>
                 <input 
+                class="form__input"
                 id="Phone" 
                 type="tel" 
                 placeholder="Número de teléfono"
@@ -38,22 +48,45 @@
                 minlength="9"
                 maxlength="9" required> 
             </div>
-            <fieldset>
-                <h4>Dónde nos conociste?</h4>
-                <div>
-                    <input type="radio" id="Universidad" name="Info" value="Universidad">
-                    <label for="Universidad">Universidad</label>
-                    <input type="radio" id="KeepCoding" name="Info" value="KeepCoding">
-                    <label for="KeepCoding">KeepCoding Kick-off</label>
-                    <input type="radio" id="Colegio" name="Info" value="Colegio">
-                    <label for="Colegio">En el colegio</label>
-                    <input type="radio" id="Github" name="Info" value="Github">
-                    <label for="Github">En Github</label>
+            <h4 class="form__label">Dónde nos conociste?</h4>
+            <fieldset >
+                <div class="form__element">
+                    <input 
+                    type="radio" 
+                    id="Universidad" 
+                    name="Info" 
+                    value="Universidad">
+                    <label 
+                    for="Universidad">Universidad</label>
+                    <input 
+                    type="radio" 
+                    id="KeepCoding" 
+                    name="Info" 
+                    value="KeepCoding">
+                    <label 
+                    for="KeepCoding">KeepCoding Kick-off</label>
+                    <input 
+                    type="radio" 
+                    id="Colegio" 
+                    name="Info" 
+                    value="Colegio">
+                    <label 
+                    for="Colegio">En el colegio</label>
+                    <input 
+                    type="radio" 
+                    id="Github" 
+                    name="Info" 
+                    value="Github">
+                    <label 
+                    for="Github">En Github</label>
                 </div>
             </fieldset>
-            <div>
-                <label for="github-user">Usuario Github <span>*</span></label>
-            <input
+            <div class="form__element">
+                <label 
+                class="form__label" 
+                for="github-user">Usuario Github</label>
+            <input 
+              class="form__input"
               type="text"
               name="github"
               id="github-user"
@@ -62,23 +95,32 @@
               pattern="^@[^\s]+">
           </div>
             </div>
-            <div>
-                <label for="Bio">Hablanos de ti</label>
+            <div class="form__element">
+                <label class="form__label" for="Bio">Hablanos de ti</label>
                 <textarea 
+                class="form__input"
                 name="Bio" 
                 id="Bio" 
-                cols="40" 
-                rows="5"
                 placeholder="Cuéntanos tu historia. Max 180 characters."
                 maxlength="180" required ></textarea>
             </div>
-            <div>
-                <input type="checkbox" id="Checkbox" name="Newsletter" value="Newsletter" checked>
+            <div class="form__element">
+                <input
+                type="checkbox"
+                id="Checkbox"
+                name="Newsletter"
+                value="Newsletter" checked>
                 <label for="Checkbox">¿Te gustaría recibir nuestra newsletter?</label>
             </div>
             <div>
-                <input type="submit" value="Guardar">
-                <input type="reset" value="Reset">
+                <input 
+                class="main-button" 
+                type="submit" 
+                value="Guardar">
+                <input 
+                class="main-button" 
+                type="reset" 
+                value="Reset">
             </div>
         </form>
     </div>  

@@ -2,6 +2,8 @@
     --main-bg-color: rgb(5, 5, 22);
     --main-bg-text: rgb(248, 237, 237);
     --main-bg-secondary-color: rgb(22, 90, 158);
+    --sign-in-bg-color: rgb(158, 99, 22);
+    --main-formulary-text: rgba(246, 247, 248, 0.866);
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -13,6 +15,12 @@
     font-style: normal;
 }
 
+.sign-in-bg {
+    color: var(--main-bg-text);
+    background-color: var(--sign-in-bg-color);
+    font-style: normal;
+}
+
 .main-button {
     color: var(--main-bg-text);
     background-color: var(--main-bg-secondary-color);
@@ -21,6 +29,27 @@
     padding: 10px;
 }
 
+
 .hidden { 
     display: none;
+}
+
+.form__element {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form__label {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.form__input {
+    padding: 16px;
+    border-radius: 5px;
+    background: #cbcbcb;
+    border: none;
+    font-style: oblique;
 }
