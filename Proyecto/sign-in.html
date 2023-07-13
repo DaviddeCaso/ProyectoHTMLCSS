@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+        <form action=""></form>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/common.css">
+</head>
+<body class="main-bg">
+    <div>
+        <h1>Sign in</h1>
+        <form method="post" action="registro.html">
+            <div>
+                <label for="Name">Nombre</label>
+                <input 
+                id="Name" 
+                type="text" 
+                placeholder="Escribe tu nombre"
+                name="Name">
+            </div>
+            <div>
+                <label for="Last-name">Apellidos</label>
+                <input 
+                id="Last-name" 
+                type="text" 
+                placeholder="Escribe tus apellidos"
+                name="Last-name">
+            </div>
+            <div>
+                <label for="Phone">Teléfono</label>
+                <input 
+                id="Phone" 
+                type="tel" 
+                placeholder="Número de teléfono"
+                name="Phone"> 
+            </div>
+            <fieldset>
+                <h4>Dónde nos conociste?</h4>
+                <div>
+                    <input type="radio" id="Universidad" name="Info" value="Universidad">
+                    <label for="Universidad">Universidad</label>
+                    <input type="radio" id="KeepCoding" name="Info" value="KeepCoding">
+                    <label for="KeepCoding">KeepCoding Kick-off</label>
+                    <input type="radio" id="Colegio" name="Info" value="Colegio">
+                    <label for="Colegio">En el colegio</label>
+                    <input type="radio" id="Github" name="Info" value="Github">
+                    <label for="Github">En Github</label>
+                </div>
+            </fieldset>
+            <div>
+                <label for="github-user">Usuario Github <span>*</span></label>
+            <input
+              type="text"
+              name="github"
+              id="github-user"
+              required
+              placeholder="@elonMusk"
+              pattern="^@[^\s]+">
+          </div>
+            </div>
+            <div>
+                <label for="Bio">Hablanos de ti</label>
+                <textarea name="Bio" id="Bio" cols="40" rows="20" placeholder="Cuéntanos tu historia. Max 180 characters" ></textarea>
+            </div>
+            <div>
+                <input type="checkbox" id="Checkbox" name="Newsletter" value="Newsletter" checked>
+                <label for="Checkbox">¿Te gustaría recibir nuestra newsletter?</label>
+            </div>
+            <div>
+                <input type="submit" value="Guardar">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>  
+</body>
+</html>
