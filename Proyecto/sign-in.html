@@ -34,7 +34,9 @@
                 id="Phone" 
                 type="tel" 
                 placeholder="Número de teléfono"
-                name="Phone" required> 
+                name="Phone"
+                minlength="9"
+                maxlength="9" required> 
             </div>
             <fieldset>
                 <h4>Dónde nos conociste?</h4>
@@ -56,13 +58,19 @@
               name="github"
               id="github-user"
               required
-              placeholder="@elonMusk"
+              placeholder="@NarutoUzumaki"
               pattern="^@[^\s]+">
           </div>
             </div>
             <div>
                 <label for="Bio">Hablanos de ti</label>
-                <textarea name="Bio" id="Bio" cols="40" rows="20" placeholder="Cuéntanos tu historia. Max 180 characters" required ></textarea>
+                <textarea 
+                name="Bio" 
+                id="Bio" 
+                cols="40" 
+                rows="5"
+                placeholder="Cuéntanos tu historia. Max 180 characters."
+                maxlength="180" required ></textarea>
             </div>
             <div>
                 <input type="checkbox" id="Checkbox" name="Newsletter" value="Newsletter" checked>
