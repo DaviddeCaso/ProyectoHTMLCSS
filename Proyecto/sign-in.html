@@ -9,9 +9,12 @@
     <link rel="stylesheet" href="CSS/common.css">
     <link rel="stylesheet" href="CSS/sign-in.css">
 </head>
-<body class="sign-in-bg">
+<body class="sign-in-bg sing_in_bg_img">
     <div class="card">
-        <h1>Sign in</h1>
+        <h1 class="TitleStyle">Sign in</h1>
+        <div>
+            <img class="sing_in_bg_img" src="Imagenes/Kunai.png" alt="Imagen Konoha">
+        </div>
         <form class="form" method="post" action="registro.html">
             <div class="form__element">
                 <label 
@@ -49,36 +52,44 @@
                 maxlength="9" required> 
             </div>
             <h4 class="form__label">Dónde nos conociste?</h4>
-            <fieldset >
-                <div class="form__element">
-                    <input 
-                    type="radio" 
-                    id="Universidad" 
-                    name="Info" 
-                    value="Universidad">
-                    <label 
-                    for="Universidad">Universidad</label>
-                    <input 
-                    type="radio" 
-                    id="KeepCoding" 
-                    name="Info" 
-                    value="KeepCoding">
-                    <label 
-                    for="KeepCoding">KeepCoding Kick-off</label>
-                    <input 
-                    type="radio" 
-                    id="Colegio" 
-                    name="Info" 
-                    value="Colegio">
-                    <label 
-                    for="Colegio">En el colegio</label>
-                    <input 
-                    type="radio" 
-                    id="Github" 
-                    name="Info" 
-                    value="Github">
-                    <label 
-                    for="Github">En Github</label>
+            <fieldset class="form__element">
+                <div class="form__element form__element--checkbox">
+                    <div>
+                        <input 
+                        type="radio" 
+                        id="Universidad" 
+                        name="Info" 
+                        value="Universidad">
+                        <label 
+                        for="Universidad">Universidad</label>
+                    </div>
+                    <div>
+                        <input 
+                        type="radio" 
+                        id="KeepCoding" 
+                        name="Info" 
+                        value="KeepCoding">
+                        <label 
+                        for="KeepCoding">KeepCoding Kick-off</label>
+                    </div>
+                    <div>
+                        <input 
+                        type="radio" 
+                        id="Colegio" 
+                        name="Info" 
+                        value="Colegio">
+                        <label 
+                        for="Colegio">En el colegio</label>
+                    </div>
+                    <div>
+                        <input 
+                        type="radio" 
+                        id="Github" 
+                        name="Info" 
+                        value="Github">
+                        <label 
+                        for="Github">En Github</label>
+                    </div>
                 </div>
             </fieldset>
             <div class="form__element">
@@ -93,7 +104,6 @@
               required
               placeholder="@NarutoUzumaki"
               pattern="^@[^\s]+">
-          </div>
             </div>
             <div class="form__element">
                 <label class="form__label" for="Bio">Hablanos de ti</label>
@@ -101,16 +111,18 @@
                 class="form__input"
                 name="Bio" 
                 id="Bio" 
-                placeholder="Cuéntanos tu historia. Max 180 characters."
+                placeholder="Cuéntanos tu historia.Max 180 characters."
                 maxlength="180" required ></textarea>
             </div>
-            <div class="form__element">
-                <input
-                type="checkbox"
-                id="Checkbox"
-                name="Newsletter"
-                value="Newsletter" checked>
-                <label for="Checkbox">¿Te gustaría recibir nuestra newsletter?</label>
+            <div class="form__element form__element--checkbox">
+                <div>
+                    <input
+                    type="checkbox"
+                    id="Checkbox"
+                    name="Newsletter"
+                    value="Newsletter" checked>
+                    <label for="Checkbox">¿Te gustaría recibir nuestra newsletter?</label>
+                </div>
             </div>
             <div>
                 <input 
