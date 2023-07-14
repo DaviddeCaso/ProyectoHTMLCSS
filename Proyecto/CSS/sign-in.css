@@ -13,11 +13,11 @@
 
 .TitleStyle {
     font-size: 36px;
-    color: var(--main-bg-secondary-color);
+    color: var(--main-bg-terciary-color);
     text-align: center;
     margin: 0;
     padding: 20px;
-    background-color: var(--main-bg-color);
+    background-color: var(--main-bg-secondary-color);
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -26,6 +26,8 @@
     flex-direction: column;
     margin-bottom: 15px;
 }
+
+
 .form__element--checkbox {
     max-width: 320px;
     margin-top: 5px;

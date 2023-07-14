@@ -1,8 +1,8 @@
 :root {
-    --main-bg-color: rgb(5, 5, 22);
-    --main-bg-text: rgb(248, 237, 237);
-    --main-bg-secondary-color: rgb(22, 90, 158);
-    --sign-in-bg-color: rgb(158, 99, 22);
+    --main-bg-color: rgb(158, 99, 22);
+    --main-bg-text: rgba(255, 255, 255, 0.926);
+    --main-bg-secondary-color: rgb(33, 33, 37);
+    --main-bg-terciary-color: rgb(14, 27, 79);
     --main-formulary-text: rgba(246, 247, 248, 0.866);
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
@@ -17,7 +17,7 @@
 
 .sign-in-bg {
     color: var(--main-bg-text);
-    background-color: var(--sign-in-bg-color);
+    background-color: var(--main-bg-color);
     font-style: normal;
 }
 
@@ -34,3 +34,8 @@
     display: none;
 }
 
+@media (min-width: 768px) {
+    .hidden {
+        display: block;
+    }
+}

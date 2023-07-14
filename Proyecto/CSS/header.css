@@ -1,12 +1,15 @@
 .header {
     position: sticky;
-    background-color: var(--main-bg-color);
+    background-color: var(--main-bg-terciary-color);
     z-index: 1000;
     top: 0;
-    padding-left: 10px;
+    padding-left: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 6px solid var(--main-bg-text);
+    
+    
     
 }
 
@@ -23,9 +26,11 @@
     list-style: none;
     display: flex;
     gap: 5px;
+    margin-right: 10px;
 
 }
 
 .header__nav__list__item a{
     text-decoration: none;
 }
+

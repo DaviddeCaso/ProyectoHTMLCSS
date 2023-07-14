@@ -1,3 +1,22 @@
 .banner {
-    
+    margin: 20px;
+
+}
+.banner h2 {
+    font-size: 36px;
+    color: var(--main-bg-text);
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--main-bg-secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.banner p {
+    text-align: center;
+    font-style: normal;
+}
+.banner img {
+    width: 100%;
 }
