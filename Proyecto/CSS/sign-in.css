@@ -34,7 +34,7 @@
 }
 
 .form__element--checkbox input {
-    margin-right: 5px;
+    margin-right:5px;
 }
 
 .form__label {
@@ -50,3 +50,5 @@
     border: none;
     font-style: oblique;
 }
+
+

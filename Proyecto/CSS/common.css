@@ -13,6 +13,9 @@
     background-color: var(--main-bg-color);
     margin: 0;
     font-style: normal;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
 }
 
 .sign-in-bg {
@@ -27,15 +30,121 @@
     border-radius: 5px;
     border: 1px solid var(--main-bg-text);
     padding: 10px;
+    transition: background-color 0.5s;
+}
+
+@media (hover: hover) {
+    .main-button:hover {
+        background-color: var(--main-bg-color);
+    }
+}
+
+.espacio {
+    width: 100px;
 }
 
 
-.hidden { 
-    display: none;
+
+@media (max-width: 768px) {
+  .hidden { 
+    display: none;}
+
+}
+.barras_de_experiencia {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
+    grid-template-areas: 
+    "Fuerza Velocidad"
+    "Carisma Inteligencia"
+    "Suerte Jutsus";
+    align-items: center;
 }
 
-@media (min-width: 768px) {
-    .hidden {
-        display: block;
+.barra_de_experiencia {
+    width: 100%;
+    height: 20px; /* ajusta la altura de la barra según tus necesidades */
+    background-color: var(--main-bg-text); /* ajusta el color de fondo de la barra */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+.relleno {
+    height: 100%;
+    background-color: var(--main-bg-terciary-color); /* ajusta el color de la barra de experiencia */
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#Fuerza .relleno {
+    width: 50%;
+    animation: animacionfuerza 4s ease-in-out forwards;
+}
+#Velocidad .relleno {
+    width: 50%;
+    animation: animacionvelocidad 4s ease-in-out forwards;
+}
+#Carisma .relleno {
+    width: 50%;
+    animation: animacioncarisma 4s ease-in-out forwards;
+}
+#Inteligencia .relleno {
+    width: 50%;
+    animation: animacioninteligencia 4s ease-in-out forwards;
+}
+#Suerte .relleno {
+    width: 50%;
+    animation: animacionsuerte 4s ease-in-out forwards;
+}
+#Jutsus .relleno {
+    width: 50%;
+    animation: animacionjutsus 4s ease-in-out forwards;
+}
+
+@keyframes animacionfuerza {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 80%;
+    }
+}@keyframes animacionvelocidad {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 90%;
+    }
+}@keyframes animacioncarisma {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+}@keyframes animacioninteligencia {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 30%;
+    }
+}@keyframes animacionsuerte {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 75%;
+    }
+}@keyframes animacionjutsus {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 70%;
     }
 }

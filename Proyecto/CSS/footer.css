@@ -2,18 +2,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
     background-color: var(--main-bg-terciary-color);
     position: fixed;
-    position: fixed;
-    left: 0;
     bottom: 0;
     width: 100%;
     z-index: 1000;
     background: radial-gradient(circle, rgba(158,99,22,1) 0%, #0e1b4f 70%, #000413 100%);
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .footer__img img {
-    width: 100px;
+    width: 80px;
     height: 60px;
  
 }
