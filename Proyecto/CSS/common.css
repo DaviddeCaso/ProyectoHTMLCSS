@@ -16,6 +16,7 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 40px;
+    margin-bottom: 100px;
 }
 
 .sign-in-bg {
@@ -38,27 +39,33 @@
         background-color: var(--main-bg-color);
     }
 }
+.imagen2 {
+  display: none; /* Oculta la imagen 2 por defecto */
+  max-width: 100%; /* Ajusta el tamaño máximo de la imagen según tus necesidades */
+  height: auto;}
 
-.espacio {
-    width: 100px;
+@media (min-width: 768px) {
+  .imagen1 {
+    display: none;
+  }
+  .imagen2 {
+    display: block;
+  }
 }
-
-
 
 @media (max-width: 768px) {
   .hidden { 
-    display: none;}
-
+    display: none;} 
 }
 .barras_de_experiencia {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 5px;
-    grid-template-areas: 
+    /* grid-template-areas: 
     "Fuerza Velocidad"
     "Carisma Inteligencia"
-    "Suerte Jutsus";
+    "Suerte Jutsus"; */
+    gap: 5px;
     align-items: center;
 }
 

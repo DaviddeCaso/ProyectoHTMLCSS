@@ -19,7 +19,6 @@
 }
 .banner img {
     width: 100%;
-    max-width: 1200px;
     align-items: center;
-
+    box-sizing: border-box;
 }
