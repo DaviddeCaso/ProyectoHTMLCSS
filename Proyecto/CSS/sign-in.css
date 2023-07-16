@@ -13,7 +13,7 @@
 
 .TitleStyle {
     font-size: 36px;
-    color: var(--main-bg-terciary-color);
+    color: var(--main-bg-text);
     text-align: center;
     margin: 0;
     padding: 20px;
@@ -24,7 +24,7 @@
 .form__element {
     display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 
